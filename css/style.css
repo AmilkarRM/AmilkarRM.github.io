@@ -1,0 +1,183 @@
+/* Propiedades para calcular el ancho y el alto de un elemento*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* Propiedades desplazamiento suave */
+html {
+    scroll-behavior: smooth;
+}
+/* Propiedades del Lienzo */
+.wgrap {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: center;
+    background-color: #353536;
+    height: 70px;
+    order: 1;
+}
+
+/* Propiedades del Logo */ 
+.logo {
+    /* flex-grow: 1; */
+    order: 1; 
+}
+
+/* Propiedades Menu */
+.menu {
+    /* background-color: #acf312; */
+    /* flex-grow: 5; */
+    margin-top: 80px;    
+    order: 1;   
+}
+
+/* Propiedades de la lista de items del Menu */
+.menu>.list>.item{    
+    display: block;
+   
+    background-color: rgb(251, 255, 5);
+    margin: 2px;
+    padding: 10px;
+    border-bottom: 3px solid #075200;    
+}
+
+/* Propiedades de la lista de items del Menu */
+.menu>.list>.item:hover{
+    background-color:rgb(171, 173, 4) ;
+}
+
+/* Propiedades Icono Logo */
+.menu-logo {
+    order: 2;
+    display: none;       
+}
+
+/* Propiedades Icono Menu cerrarse */
+label>img{
+    width: 30px;
+    position: fixed;
+    top: 10px;
+}
+
+/* Propiedades Menu hamburguesa */
+.label>img:hover{
+    width: 30px;
+    background-color: white;
+    transition: 2s all;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* Propiedades Tarjeta 0 */
+.card-0 {
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(251, 255, 5);
+    background-size: cover;
+    background-position: center 50px;
+    background-repeat: no repeat;
+    background-attachment: fixed;
+    padding: 300px 0px 0px 0px
+}
+
+
+/* Propiedades Tarjeta 1 */
+.card-1 {
+    width: 100%;
+    height: 100vh;
+    background-color: chartreuse;
+    background-size: cover;
+    background-position: center 50px;
+    background-repeat: no repeat;
+    background-attachment: fixed;
+    padding: 300px 0px 0px 0px
+}
+/* Propiedades Parrafo 1 - Tarjeta 1 */
+.tema {
+    margin-left: 10%;
+    padding: 20px;
+    font-size: 16px;
+    background-color: rgb(0, 0, 0, 0.5);
+    width: 70%;
+    color: white;
+    border-radius: 30 px 0px 30px 0px;
+}
+/* Propiedades Tarjeta 2 */
+.card-2 {
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(20, 90, 170);
+}
+/* Propiedades Tarjeta 3 */
+.card-3 {
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(201, 10, 207);
+}
+/* Propiedades Tarjeta 4 */
+.card-4 {
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(170, 20, 20);
+}
+
+
+
+/* Propiedades Ventana emergente */
+.position{
+    background-color: rgb(0,0,0,0.6);
+    position: fixed;
+    top: 0px;
+    right: 0px;
+    bottom:0px;
+    left: 0px;
+    margin: auto;
+    padding: 180px 100px 100px 100px;
+    color: white;
+    font-size: 1.3rem   
+}
+#pop:checked ~.position{
+    display:none;    
+}
+#pop:checked ~label{
+    display: none;
+}
+label>img{
+    width: 25px;
+    position: fixed;
+    top: 10px;
+    background-color: white;
+    left: 90px;
+    z-index: 10;
+    cursor: pointer;
+}
+#pop{
+    display: none;
+}
+
+
+
+
+
+
+
+
+@media screen and (max-width: 768px){
+    .menu>.list{
+    display: flex;
+    flex-direction: column;    
+    width: 80px;
+}
+}
