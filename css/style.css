@@ -23,6 +23,7 @@ html {
 /* Propiedades Logo */ 
 .logo {
     order: 1; 
+    margin-top: 60px;
 }
 
 /* Propiedades Menu de Enlaces */
@@ -33,7 +34,6 @@ html {
     background-color: rgb(251, 255, 5);
     transition: 4s all;
     margin-left: 17%;  
- 
 }
 
 /* Propiedades Menu de Enlaces */
@@ -42,20 +42,10 @@ html {
     flex-direction: inherit;    
     width: 90px;
     position: relative;
-    right: -110px; 
+    right: -50px; 
     background-color: rgb(251, 255, 5);
     
 }
-
-/*
-   width: 3px; 
-    height: 200px;
-    background-color: #999b84;
-    transition: 4s all;
-    margin-left: -70%;
-
-*/
-
 
 /* Propiedades lista de items del Menu */
 .menu>.list>.item{    
@@ -95,17 +85,13 @@ label>img{
 }
 
 
-
-
 /* check menu ocultar*/
 /*
 #check-menu{
     display: none;
 } */
 
-
 /* check menu ocultar*/
-
 
 /* check menu desplegable*/
 
@@ -113,14 +99,6 @@ label>img{
     margin-left: 0%;
     transition: 2s all;    
 } 
-
-
-
- 
-
-
-
-
 
 
 /* Propiedades Tarjeta 0 */
@@ -163,7 +141,6 @@ label>img{
     height: 100vh;
     background-color: rgb(20, 90, 170);
 }
-
 /* Propiedades Parrafo 2 - Tarjeta 2 */
 .tema_2 {
     margin-left: 10%;
@@ -174,7 +151,6 @@ label>img{
     color: white;
     border-radius: 30 px 0px 30px 0px;
 }
-
 /* Propiedades Tarjeta 3 */
 .card-3 {
     width: 100%;
@@ -187,8 +163,6 @@ label>img{
     height: 100vh;
     background-color: rgb(170, 20, 20);
 }
-
-
 
 /* Propiedades Ventana emergente */
 .position{
@@ -223,12 +197,7 @@ label>img{
 
 #pop{
     display: none;
-
 }
-
-
-
-
 
 
 /* Propiedades diseño adaptable */
@@ -239,16 +208,14 @@ label>img{
     flex-direction: column;    
     width: 90px;
     position: -webkit-sticky;
-    right: 115px; 
-    
-    
+    right: 115px;    
 }
 
 /* Propiedades Logo */ 
 .logo{ 
     flex-grow: 6; 
     order: 2;
-    
+    margin-top: 10px;    
 }
 
 /* Propiedades Menu */
@@ -256,17 +223,7 @@ label>img{
     /* background-color: #acf312; */
      flex-grow: 1;  
      order: 1;   
-     margin-top: 80px; 
-     
+     margin-top: 80px;      
    }
 
-
-
-
-
-
-
-
-
 }
-
