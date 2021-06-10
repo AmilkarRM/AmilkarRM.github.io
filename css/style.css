@@ -17,7 +17,7 @@ html {
     align-items: center;
     background-color: #353536;
     height: 70px;
-    order: 1;
+    order: 0;
 }
 
 /* Propiedades Logo */ 
@@ -27,10 +27,35 @@ html {
 
 /* Propiedades Menu de Enlaces */
 .menu {
-    margin-top: 80px;    
-    order: 1;
-    width: 0px;   
+    margin-top: 80px;
+    flex-grow: 1;    
+    order: 2;
+    background-color: rgb(251, 255, 5);
+    transition: 4s all;
+    margin-left: 17%;  
+ 
 }
+
+/* Propiedades Menu de Enlaces */
+.menu>.list{
+    display: flex;
+    flex-direction: inherit;    
+    width: 90px;
+    position: relative;
+    right: -110px; 
+    background-color: rgb(251, 255, 5);
+    
+}
+
+/*
+   width: 3px; 
+    height: 200px;
+    background-color: #999b84;
+    transition: 4s all;
+    margin-left: -70%;
+
+*/
+
 
 /* Propiedades lista de items del Menu */
 .menu>.list>.item{    
@@ -41,7 +66,7 @@ html {
     border-bottom: 3px solid #075200;
     width: 90px; 
     position: relative;
-    right: 50px;   
+    left: 30px;   
 }
 
 /* Propiedades lista de items del Menu */
@@ -72,9 +97,26 @@ label>img{
 
 
 
+/* check menu ocultar*/
+/*
+#check-menu{
+    display: none;
+} */
+
+
+/* check menu ocultar*/
+
+
+/* check menu desplegable*/
+
+#check-menu:checked ~ .menu{
+    margin-left: 0%;
+    transition: 2s all;    
+} 
 
 
 
+ 
 
 
 
@@ -189,15 +231,16 @@ label>img{
 
 
 
-/* Propiedades diseño adaptable */
+/* Propiedades diseÃ±o adaptable */
 /* Propiedades lista de items del Menu */
 @media screen and (max-width: 768px){
     .menu>.list{
     display: flex;
     flex-direction: column;    
     width: 90px;
-    position: relative;
-    right: -50px; 
+    position: -webkit-sticky;
+    right: 115px; 
+    
     
 }
 
@@ -205,17 +248,25 @@ label>img{
 .logo{ 
     flex-grow: 6; 
     order: 2;
+    
 }
 
 /* Propiedades Menu */
 .menu{
     /* background-color: #acf312; */
-     flex-grow: 5;  
+     flex-grow: 1;  
      order: 1;   
      margin-top: 80px; 
+     
    }
 
-   
+
+
+
+
+
+
+
 
 }
 
