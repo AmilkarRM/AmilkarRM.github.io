@@ -86,17 +86,12 @@ label>img{
     transition: 2s all;        
 }
 
-
 /* check menu ocultar*/
 /*
 #check-menu{
     display: none;
 } */
-
-
 /* check menu ocultar*/
-
-
 /* check menu desplegable*/
 
 #check-menu:checked ~ .menu{
@@ -115,7 +110,6 @@ label>img{
     background-attachment: fixed;
     padding: 300px 0px 0px 0px
 }
-
 
 /* Propiedades Tarjeta 1 */
 .card-1 {
@@ -232,9 +226,6 @@ label>img{
 
 
 
-
-
-
 /* Propiedades diseño adaptable */
 /* Propiedades lista de items del Menu */
 @media screen and (max-width: 768px){
@@ -265,14 +256,6 @@ label>img{
      margin-top: 80px; 
      
    }
-
-
-
-
-
-
-
-
 
 }
 
